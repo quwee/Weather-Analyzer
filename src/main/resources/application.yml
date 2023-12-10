@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${POSTGRES_URL_WEATHER_ANALYZER}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    show-sql: true
+  sql:
+    init:
+      mode: always
+
+weather-update:
+  base-url: https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}
+  location: minsk

@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS weather (
+    id SERIAL PRIMARY KEY,
+    created_at DATE NOT NULL,
+    temp_c DOUBLE PRECISION NOT NULL,
+    wind_mph DOUBLE PRECISION NOT NULL,
+    pressure_mb DOUBLE PRECISION NOT NULL,
+    humidity INTEGER NOT NULL,
+    weather_text VARCHAR NOT NULL,
+    country VARCHAR NOT NULL,
+    city VARCHAR NOT NULL
+);
